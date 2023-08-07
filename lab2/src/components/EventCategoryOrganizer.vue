@@ -1,23 +1,23 @@
 <template>
-    <div class="event-class">
+    <div class="event-category-organizer">
         <div class="event-card">
-            <span>@{{ event?.time }} on {{ event?.date }}</span>
-            <h4>{{ event?.title }}</h4>
-        </div>
+        <span>@{{ event?.category }}</span>
+        <h4>{{ event?.organizer }}</h4>
     </div>
+</div>
 </template>
-
+  
 <script setup lang="ts">
-import type { EventItem } from '@/type'
+import type { EventCategoryOrganizer } from '@/type'
 import type { PropType } from 'vue'
 const props = defineProps({
     event: {
-        type: Object as PropType<EventItem>,
+        type: Object as PropType<EventCategoryOrganizer>,
         require: true
     }
 })
 </script>
-
+  
 <style scoped>
 .event-card {
     padding: 20px;
@@ -32,3 +32,4 @@ const props = defineProps({
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
+  

@@ -8,3 +8,8 @@ export interface EventItem{
     time: string
     organizer: string
 }
+
+export interface EventCategoryOrganizer{
+    category: string
+    organizer: string
+}
