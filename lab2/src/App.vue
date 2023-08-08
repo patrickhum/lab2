@@ -8,6 +8,8 @@ import { RouterLink, RouterView } from 'vue-router'
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/new">New</RouterLink>
+      <RouterLink to="/student">Student</RouterLink>
+
     </nav>
   </header>
 
@@ -15,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-#app{
+#app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -23,30 +25,30 @@ import { RouterLink, RouterView } from 'vue-router'
   color: #2c3e50;
 }
 
-nav{
+nav {
   padding: 30px;
 }
 
-nav a{
+nav a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active{
+nav a.router-link-exact-active {
   color: #42b983;
 }
 
-header{
+header {
   line-height: 1.5;
   max-height: 100vh;
 }
 
-.logo{
+.logo {
   display: block;
   margin: 0 auto 2rem;
 }
 
-h4{
+h4 {
   font-size: 20px;
 }
 </style>
