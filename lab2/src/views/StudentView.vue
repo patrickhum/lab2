@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import StudentCard from '../components/StudentCard.vue'
+import StudentCard from '../components/studentCard.vue'
 import type { StudentItem } from '@/type'
-import { ref } from 'vue'
-import StudentService from '@/services/EventService.ts'
+import { type Ref, ref } from 'vue'
+import StudentService from '@/services/StudentService'
 
-const studentList = ref<Array<StudentItem>>([])
-
-StudentService.getStudent().then((response) => {
+const studentList: Ref<Array<StudentItem>>=ref([])
+  
+StudentService.getEvent().then((response) => {
   studentList.value = response.data
+
 })
 </script>
 

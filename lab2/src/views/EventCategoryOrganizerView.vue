@@ -34,19 +34,22 @@ const events = ref<EventItem[]>([
     time: '11:00',
     organizer: 'Carey Wales'
   }
-
 ])
 </script>
 
 <template>
   <h1>Event For Good</h1>
   <main class="events">
-    <EventCategoryOrganizer v-for="event in events" :key="event.id" :event="event"></EventCategoryOrganizer>
+    <EventCategoryOrganizer
+      v-for="event in events"
+      :key="event.id"
+      :event="event"
+    ></EventCategoryOrganizer>
   </main>
 </template>
 
 <style scoped>
-.events{
+.events {
   display: flex;
   flex-direction: column;
   align-items: center;
